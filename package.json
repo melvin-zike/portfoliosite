@@ -1,10 +1,14 @@
 {
   "name": "melvinnwaezike",
+  "homepage": "https://mnwaezike.tech/",
   "version": "1.0.0",
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
+    "build": "webpack --config=Scripts/config/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Melvin Nwaezike",
   "license": "MIT",
